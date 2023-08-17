@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "name": "Elbert Russel",
+      "id": 20
+    },
+    {
+      "name": "Ismael Gleason",
+      "id": 21
+    },
+    {
+      "name": "Allison Von",
+      "id": 22
+    },
+    {
+      "name": "Brandon Mueller",
+      "id": 23
+    },
+    {
+      "name": "Mrs. Lauren Steuber",
+      "id": 24
+    },
+    {
+      "name": "Ollie Padberg",
+      "id": 25
+    },
+    {
+      "name": "Johanna Stanton-Donnelly",
+      "id": 26
+    },
+    {
+      "name": "Christian Block",
+      "id": 27
+    }
+  ],
+  "albums": [],
+  "photos": []
+}
