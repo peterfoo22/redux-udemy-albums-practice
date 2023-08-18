@@ -1,10 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { usersReducer } from './slices/usersSlice';
+import { setupListeners } from '@reduxjs/toolkit/query'
+import { albumsApi } from "./apis/albumsApi";
+import { getDefaultNormalizer } from "@testing-library/react";
 
 export const store = configureStore({
   reducer:{
-    users: usersReducer
+    users: usersReducer,
+    [albumsApi.reducerPath]: albumsApi.reducer
   },
+  middleware:(getDefaultMiddleware)=>{
+    return getDefaultMiddleware()
+      .concat(albumsApi.middleware);
+  }
 })
 
 export * from './thunks/fetchUsers'
