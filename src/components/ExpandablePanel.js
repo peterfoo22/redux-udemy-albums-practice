@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { GoChevronDown, GoChevronLeft } from 'react-icons/go'
+import Button from './Button'
 
 const ExpandablePanel = ({header,children}) => {
   
